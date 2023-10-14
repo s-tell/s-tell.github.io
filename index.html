@@ -1,16 +1,72 @@
 <!DOCTYPE html><html lang="ru"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
-<link rel="icon" href="favicon.svg">
-<title>S-tell</title>
-<style>
-  p {hyphens: auto;}
-</style>
-</head>
-<body>
+<meta name="Author" content="Вадим Тарасов">
+<meta name=keywords content="мессенджер,коммуникация,messenger">
+<meta name=description content="Приватный http-мессенджер">
+<meta name="robots" content="all">
+<meta property="og:title" content="S-tell">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://s-tell.github.io/">
+<meta property="og:image" content="https://s-tell.github.io/logo.svg">
+<meta property="og:image:type" content="image/svg+xml">
+<meta property="og:description" content="Приватный http-мессенджер">
+<meta property="og:site_name" content="S-tell">
+<meta property="og:locale" content="ru_RU">
+<link rel="stylesheet" href="style.css"><link rel="icon" href="logo.svg">
+<title>S-tell</title></head><body onload="nav()">
+<header>
+<img id="bg" src="head.jpg"><div><img src="logo.svg"><h1>S-tell</h1></div>
+</header>
 
-<p>В разработке.</p>
-<footer><a rel="me" href="https://toot.io/@stell">Mastodon</a></footer>
+<main>
+<nav>
+<span onclick="nav('about')">О мессенджере</span>
+<span onclick="nav('manual')">Руководство</span>
+<span onclick="nav('download')">Скачать</span>
+<span onclick="nav('license')">Лицензия</span>
+</nav>
 
+<section id="about">
+<h2>S-tell: приватный http-мессенджер</h2>
+<h3>Подзаголовок</h3>
+<p>Раздел в разработке.</p>
+</section>
+
+<section id="manual">
+<h2>Руководство</h2>
+<h3>Подзаголовок</h3>
+<p>Раздел в разработке.</p>
+</section>
+
+<section id="download">
+<h2>Скачать мессенджер</h2>
+<h3>Подзаголовок</h3>
+<p>Раздел в разработке.</p>
+</section>
+
+<section id="license">
+<h2>Лицензия</h2>
+<p><a href="https://licenseit.ru/wiki/index.php/MIT_License"
+      target="_blank">MIT License</a></p>
+<p>Copyright &copy; Вадим Тарасов, 2023.</p>
+<p>Данная лицензия разрешает безвозмездно лицам, получившим копию данного программного обеспечения и сопутствующей документации (в дальнейшем именуемыми «Программное обеспечение»), использовать Программное обеспечение без ограничений, включая неограниченное право на использование, копирование, изменение, объединение, публикацию, распространение, сублицензирование и/или продажу копий Программного обеспечения, также как и лицам, которым предоставляется данное Программное обеспечение, при соблюдении следующих условий:</p>
+<p>Вышеупомянутый копирайт и данные условия должны быть включены во все копии или значимые части данного Программного обеспечения.</p>
+<p><small>ДАННОЕ ПРОГРАММНОЕ ОБЕСПЕЧЕНИЕ ПРЕДОСТАВЛЯЕТСЯ «КАК ЕСТЬ», БЕЗ ЛЮБОГО ВИДА ГАРАНТИЙ, ЯВНО ВЫРАЖЕННЫХ ИЛИ ПОДРАЗУМЕВАЕМЫХ, ВКЛЮЧАЯ, НО НЕ ОГРАНИЧИВАЯСЬ, ГАРАНТИЯМИ ТОВАРНОЙ ПРИГОДНОСТИ, СООТВЕТСТВИЯ ПО ЕГО КОНКРЕТНОМУ НАЗНАЧЕНИЮ И НЕНАРУШЕНИЯ ПРАВ. НИ В КАКОМ СЛУЧАЕ АВТОР НЕ НЕСЕТ ОТВЕТСТВЕННОСТИ ПО ИСКАМ О ВОЗМЕЩЕНИИ УЩЕРБА, УБЫТКОВ ИЛИ ДРУГИХ ТРЕБОВАНИЙ ПО ДЕЙСТВУЮЩИМ КОНТРАКТАМ, ДЕЛИКТАМ ИЛИ ИНОМУ ИСКУ, ВОЗНИКШИМ ИЗ, ИМЕЮЩИМ ПРИЧИНОЙ ИЛИ СВЯЗАННЫМ С ПРОГРАММНЫМ ОБЕСПЕЧЕНИЕМ ИЛИ ИСПОЛЬЗОВАНИЕМ ПРОГРАММНОГО ОБЕСПЕЧЕНИЯ ИЛИ ИНЫМИ ДЕЙСТВИЯМИ С ПРОГРАММНЫМ ОБЕСПЕЧЕНИЕМ.</small></p>
+</section>
+
+</main>
+<footer>
+<img src="m.svg">
+<a rel="me" href="https://toot.io/@stell">Mastodon</a>
+</footer>
+
+<script>
+const nav = item => {
+  item = item ? item : "about";
+  document.querySelectorAll("section").forEach(e => e.style.display = "none");
+  let el = document.querySelector(`#${item}`);
+  if (el) el.style.display = "block";
+}
+</script>
 </body>
 </html>

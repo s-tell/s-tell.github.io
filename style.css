@@ -1,0 +1,69 @@
+@font-face {
+  font-family: "f";
+  src: url("font.ttf");
+}
+body {
+  margin: 0px 0px 20px;
+  font-family: f, sans-serif;
+  font-size: 16px;
+}
+main {
+  width: 840px;
+  max-width: 92%;
+  margin: 4px auto 40px;
+}
+img#bg {
+  width: 100%;
+  height: 100px;
+}
+header div {
+  margin-top: -115px;
+  color: #09c;
+  text-align: center;
+}
+div img {
+  height: 80px;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+h1 {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  font-size: 48px;
+}
+nav {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 95%;
+}
+nav span {
+  margin: 0px 8px;
+  line-height: 1.5;
+  color: #09c;
+  cursor: pointer;
+}
+nav span:hover {
+  text-decoration: underline;
+  color: blue;
+}
+h2 {
+  color: #036;
+  text-align: center;
+}
+h3 {
+  color: #09c;
+}
+p {
+  hyphens: auto;
+}
+footer {
+  text-align: center;
+  font-size: 95%;
+  padding-top: 8px;
+  border-top: 1px solid #036;
+}
+footer img {
+  height: 32px;
+  vertical-align: middle;
+}
