@@ -1,10 +1,7 @@
-@font-face {
-  font-family: "f";
-  src: url("font.ttf");
-}
 body {
   margin: 0px 0px 20px;
-  font-family: f, sans-serif;
+  font-family: Verdana, sans-serif;
+  line-height: 1.4;
   font-size: 16px;
 }
 main {
