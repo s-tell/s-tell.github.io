@@ -17,6 +17,7 @@ header div {
   margin-top: -115px;
   color: #09c;
   text-align: center;
+  line-height: 1;
 }
 div img {
   height: 80px;
