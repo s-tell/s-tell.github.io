@@ -1,7 +1,7 @@
 body {
   margin: 0px 0px 20px;
   font-family: Verdana, sans-serif;
-  line-height: 1.5;
+  line-height: 1.4;
   font-size: 16px;
 }
 main {
@@ -17,7 +17,7 @@ header div {
   margin-top: -115px;
   color: #09c;
   text-align: center;
-  line-height: 1;
+  line-height: 1; 
 }
 div img {
   height: 80px;
@@ -51,14 +51,4 @@ h2 {
 }
 p {
   hyphens: auto;
-}
-footer {
-  text-align: center;
-  font-size: 95%;
-  padding-top: 8px;
-  border-top: 1px solid #036;
-}
-footer img {
-  height: 32px;
-  vertical-align: middle;
 }
